@@ -26,14 +26,11 @@ h1,h2,h3,h4,h5,h6{
 html {
     font-family: 'Bricolage Grotesque', sans-serif;
     line-height: 1.5;
-
-  
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    /* min-height: 100rem; */
+    -webkit-text-size-adjust: 100%;    
 } 
 body {
     background: var(--bg-color);
@@ -42,9 +39,7 @@ body {
     padding: 0;
 }
 
-/* for darkmode */
-
-body.active {
+#darkmode img.active {
     --text-color: #fff;
     --bg-color: #0f0c27;
 }
@@ -157,9 +152,24 @@ header a:hover {
         opacity: 1;
     }
 }
-
-#personal{
+.personal-head{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.personal-main{
+    margin-top: 5rem;
+    font-size: 1.25rem;
+}
+.personal-footer{
     display: flex;
+    margin: 30px auto;
     flex-direction: column;
-    gap:10rem
+    gap:0.25rem;
+}
+.personal-info{
+    display: flex;
+    gap: 10px;
+    justify-content: start;    
+    font-size:1.25rem;
+    width: 30rem;
 }

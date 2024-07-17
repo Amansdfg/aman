@@ -1,7 +1,9 @@
 import github from "./assets/github.svg"
 import linkedIn from "./assets/linkedIn.svg"
 import telegram from "./assets/telegram.svg"
-
+import email from "./assets/email.svg"
+import navigation from "./assets/navigation.svg"
+import phone from "./assets/phone.svg"
 export const header={
     full_name:"Aman Kalabay",
     list:[
@@ -10,8 +12,8 @@ export const header={
             name:"Home"
         },
         {
-            href:"#about",
-            name:"About"
+            href:"#personal",
+            name:"Personal"
         },
         {
             href:"#skills",
@@ -45,5 +47,22 @@ export const social=[
         name:"Telegram",
         href:"https://t.me/AmanKalabay",
         img:telegram
+    }
+]
+export const personal_info=[
+    {
+        id:"p1",
+        img:email,
+        name:"kalabaiaman2006@gmail.com"
+    },
+    {
+        id:"p2",
+        img:phone,
+        name:"8-747-539-70-59"
+    },
+    {
+        id:"p3",
+        img:navigation,
+        name:"Almaty, Kazakhstan"
     }
 ]
