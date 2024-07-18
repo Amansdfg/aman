@@ -14,7 +14,6 @@
     --bg-color: #fff;
     --text-color:#0f0c27;
     --hover: hsl(260, 100%, 51%);
-
     --big-font: 3.2rem;
     --medium-font: 1.8rem;
     --p-font: 0.941 rem;
@@ -39,10 +38,10 @@ body {
     padding: 0;
 }
 
-#darkmode img.active {
+/* #darkmode img.active {
     --text-color: #fff;
     --bg-color: #0f0c27;
-}
+} */
 header {
     position: fixed;
     width: 100%;
@@ -67,12 +66,12 @@ header h1{
 }
 header ul{
     display: flex;
-    gap:1rem;
+    align-items: center;
+    gap:6rem;
     list-style: none;
 }
 header a {
     font-size: 1rem;
-    padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
 }
@@ -94,25 +93,23 @@ header a:hover {
     animation-delay: 0.5s;
 }
 #darkmode{
-    font-size: 22px;
-    cursor: pointer;
-    border-width: 0;
-    padding-inline:0;
-    padding-block:0;    
+    border-width: 0;    
+    padding-inline:0; 
+    padding-block:0;   
     background-color: transparent;
+}
+#darkmode img::before{
+    height: 33px;        
+    width: 33px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 #profile{
     height: 100vh;
     width: 100vw;
     background-color: rgba(#fff, #fff, #fff, 100%);
 }
-#home{
-    /* height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    gap:20rem; */
+#home{    
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -172,4 +169,59 @@ header a:hover {
     justify-content: start;    
     font-size:1.25rem;
     width: 30rem;
+}
+@media (max-width:600px) {
+    header{
+        padding: 10px 3%;
+        transition: 0.2s;
+        box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+
+    }
+    header a{
+        font-size: 0.75rem;
+        padding: 5px 5px;
+    }
+    header h1{
+        font-size: 0.75rem;    
+        margin: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    header ul{
+        display: flex;
+        gap:3px;        
+    }    
+    #darkmode img{
+        height: 15px;        
+        width: 15px;
+    }    
+    .home{
+        grid-template-columns: 0.5fr 3fr;
+    }
+    .home-img img{
+        height: 100px;
+    }
+    .home-info{
+        font-size: 14px;
+    }
+    .social-network img{
+        height: 40px;
+    }
+    .personal-main{
+        font-size: 0.8rem;
+    }
+}
+@media (min-width:600px) {
+    
+}
+@media (min-width:768px) {
+        
+}
+@media (min-width:1024px) {
+    
+}
+@media (min-width:1280px) {
+    
+}
+@media (min-width:1536px) {
+    
 }

@@ -13,7 +13,7 @@ function App(){
 
   return(
     <>
-      <Header onChangeTheme={setTheme} theme={theme}/>
+      <Header onChangeTheme={toggleTheme} theme={theme}/>
       <Home/>
       <Personal/>
       
