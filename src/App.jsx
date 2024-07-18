@@ -2,6 +2,7 @@ import {useState} from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Personal from "./components/Personal";
+import Footer from "./components/Footer";
 function App(){
   const [theme, setTheme] = useState(false);
 
@@ -14,9 +15,10 @@ function App(){
   return(
     <>
       <Header onChangeTheme={toggleTheme} theme={theme}/>
-      <Home/>
-      <Personal/>
+      <Home theme={theme}/>
+      <Personal theme={theme}/>
       
+      <Footer theme={theme}/>
     </>
   )
 }

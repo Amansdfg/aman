@@ -1,11 +1,11 @@
 import {social} from "../data"
 import reactLogo from "../assets/react.svg"
-function Home(){
+function Home({theme}){
     return(
         <section id="home">
             <div className="social-network">
                 {social.map((item)=>(
-                    <a key={item.id} target="_blank" href={item.href}><img src={item.img} alt={item.name}/></a>
+                    <a key={item.id} target="_blank" href={item.href}><img src={theme?item.imgDark:item.img} alt={item.name}/></a>
                 ))}
             </div>  
             <div className="home-info">

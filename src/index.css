@@ -125,6 +125,36 @@ header a:hover {
     height: 10rem;
     animation: logo-spin infinite 20s linear;
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;    
+    padding: 40px 0px;
+    background-color: var(--bg-color);
+}
+footer ul{
+    display:flex;
+    gap:20px;
+    justify-content: center;    
+    
+}
+footer ul img{
+    height: 40px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+footer ul h3{
+    font-size: 1rem;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    justify-content: center;
+    margin: 0px auto;
+}
 @keyframes logo-spin{
     from{
         transform: rotate(0deg);
@@ -194,7 +224,7 @@ header a:hover {
         height: 15px;        
         width: 15px;
     }    
-    .home{
+    #home{
         grid-template-columns: 0.5fr 3fr;
     }
     .home-img img{

@@ -1,5 +1,5 @@
 import {personal_info} from "../data"
-export default function Personal(){
+export default function Personal({theme}){
     return(
         <section id="personal">
             <div className="personal-head">
@@ -29,7 +29,7 @@ export default function Personal(){
             <div className="personal-footer">
                 {personal_info.map((data)=>(
                     <div key={data.id} className="personal-info">
-                        <img src={data.img} alt={data.name}/>
+                        <img src={theme?data.imgDark:data.img} alt={data.name}/>
                         <span>{data.name}</span>
                     </div>
                 ))}                              
