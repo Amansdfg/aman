@@ -2,6 +2,7 @@ import {useState} from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Personal from "./components/Personal";
+import Skill from "./components/Skills";
 import Footer from "./components/Footer";
 function App(){
   const [theme, setTheme] = useState(false);
@@ -17,7 +18,7 @@ function App(){
       <Header onChangeTheme={toggleTheme} theme={theme}/>
       <Home theme={theme}/>
       <Personal theme={theme}/>
-      
+      <Skill/>
       <Footer theme={theme}/>
     </>
   )

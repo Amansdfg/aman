@@ -8,9 +8,10 @@ function Header({onChangeTheme,theme}){
             <ul>
                 {header.list.map((item)=>(
                     <li key={item.name}><a href={item.href}>{item.name}</a></li>
-                ))}    
-                <button onClick={()=>onChangeTheme()} id="darkmode"><img src={theme?sun:moon} alt="aman" className={theme?"active":null}/></button>
+                ))}                    
             </ul>
+            <button onClick={()=>onChangeTheme()} id="darkmode"><img src={theme?sun:moon} alt="aman" className={theme?"active":null}/></button>
+            <button className="menu" hidden> <img src={theme?sun:moon} alt="aman"/></button>
         </header>
     )
 }

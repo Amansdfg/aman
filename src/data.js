@@ -88,3 +88,35 @@ export const personal_info=[
         name:"Almaty, Kazakhstan"
     }
 ]
+export const skills=[
+    {
+        id:"1",
+        name:"Java",
+        skill:95
+    },
+    {
+        id:"2",
+        name:"JavaScript",
+        skill:80
+    },
+    {
+        id:"4",
+        name:"Spring",
+        skill:85
+    },
+    {
+        id:"5",
+        name:"React",
+        skill:80
+    },
+    {
+        id:"6",
+        name:"Postgres",
+        skill:80
+    },
+    {
+        id:"7",
+        name:"Tailwind CSS",
+        skill:80
+    }
+]
