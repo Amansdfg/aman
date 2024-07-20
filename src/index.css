@@ -241,7 +241,6 @@ footer ul h3{
         padding: 10px 3%;
         transition: 0.2s;
         box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
-
     }
     header a{
         font-size: 0.75rem;
@@ -254,7 +253,10 @@ footer ul h3{
     }
     .menu{
         display: block;
+        background-color: var(--bg-color);
     }
+    
+        
     header ul{
         display: flex;
         flex-direction: column;
