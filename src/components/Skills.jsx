@@ -13,9 +13,10 @@ function Skill(){
                             <div className="skill-head">
                                 <span>{data.name}</span>
                                 <h2>{data.skill}</h2>
+                            </div>                                                    
+                            <div className="full-persent">
                             </div>
-                            <div className="persent">
-
+                            <div style={{width:data.skill+"%"}} className="persent">
                             </div>
                         </li>    
                     ))}
