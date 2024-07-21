@@ -2,6 +2,7 @@ import { header } from "../data";
 import sun from "../assets/sun.svg"
 import moon from "../assets/moon.svg";
 import menu from "../assets/menu.svg"
+import menuDark from "../assets/menuDark.svg"
 import close from "../assets/close.svg"
 import closeDark from "../assets/closeDark.svg"
 import { useState } from "react";
@@ -26,10 +27,10 @@ function Header({onChangeTheme,theme}){
                     ))}                    
                 </ul>
             
-                <button isOpen onClick={()=>onChangeTheme()} id="darkmode"><img src={theme?sun:moon} alt="aman" className={theme?"active":null}/></button>
+                <button  onClick={()=>onChangeTheme()} id="darkmode"><img src={theme?sun:moon} alt="aman" className={theme?"active":null}/></button>
             </>
         }
-            <button onClick={()=>open()} className="menu" hidden> <img src={isOpen?(theme?menu:menu):(!theme?close:menu)} alt="aman"/></button>
+            <button onClick={()=>open()} className="menu" hidden> <img className="btn-menu" src={isOpen?(theme?menuDark:menu):(!theme?close:closeDark)} alt="aman"/></button>
         </header>
     )
 }

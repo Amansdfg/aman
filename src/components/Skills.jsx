@@ -2,7 +2,7 @@ import coding from "../assets/coding.gif";
 import { skills } from "../data";
 import {useEffect} from "react";
 import { card } from "../data";
-function Skill(){
+function Skill({theme}){
     useEffect(() => {    
         function handleIntersection(entries) {
             entries.forEach(entry => {
@@ -49,7 +49,7 @@ function Skill(){
                     <div className="card" key={item.id}>
                     <div className="inner" >
                         <div className="front">
-                            <img src={item.img}/>
+                            <img src={!theme?item.img:item.imgDark}/>
                             <h2>{item.name}</h2>
                         </div>
                         <div className="back">                        

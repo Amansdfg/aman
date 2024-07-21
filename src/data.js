@@ -12,8 +12,13 @@ import navigation from "./assets/navigation.svg"
 import navigationDark from "./assets/navigationDark.svg"
 import phone from "./assets/phone.svg"
 import phoneDark from "./assets/phoneDark.svg"
+import java from "./assets/java.svg";
+import javaDark from "./assets/javaDark.svg";
+import javascipt from "./assets/javascript.svg"
+import javasciptDark from "./assets/javascriptDark.svg"
 export const currentYear=new Date().getFullYear();
 export const header={
+
     full_name:"Aman Kalabay",
     list:[
         {
@@ -124,19 +129,22 @@ export const card=[
     {
         id:"1",
         name:"Java",
-        img:linkedIn,
+        img:java,
+        imgDark:javaDark,
         text:"Spring"
     },
     {
         id:"2",
         name:"JavaScript",
-        img:telegram,
+        img:javascipt,
+        imgDark:javasciptDark,
         text:"React"
     },
     {
         id:"3",
         name:"Git",
         img:github,
+        imgDark:githubDark,
         text:"GitHub/Gitlab"
     }
 ]

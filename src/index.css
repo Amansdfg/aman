@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
     
 }
+.menu{
+    border: none;
+
+}
 :root {
     --main-color: #2768d9; 
     --bg-color: #fff;

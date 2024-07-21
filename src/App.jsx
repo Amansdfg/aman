@@ -19,7 +19,7 @@ function App(){
       <Header onChangeTheme={toggleTheme} theme={theme}/>
       <Home theme={theme}/>
       <Personal theme={theme}/>
-      <Skill/>
+      <Skill theme={theme}/>
       <Contact/>
       <Footer theme={theme}/>
 
