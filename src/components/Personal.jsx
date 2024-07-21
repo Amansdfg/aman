@@ -2,7 +2,7 @@ import {personal_info} from "../data"
 export default function Personal({theme}){
     return(
         <section id="personal">
-            <div className="personal-head">
+            <div className="head">
                 <span>Aman Kalabay</span>
                 <h3>Introdation</h3>
             </div>

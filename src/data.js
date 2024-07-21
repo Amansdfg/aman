@@ -120,3 +120,23 @@ export const skills=[
         skill:80
     }
 ]
+export const card=[
+    {
+        id:"1",
+        name:"Java",
+        img:linkedIn,
+        text:"Spring"
+    },
+    {
+        id:"2",
+        name:"JavaScript",
+        img:telegram,
+        text:"React"
+    },
+    {
+        id:"3",
+        name:"Git",
+        img:github,
+        text:"GitHub/Gitlab"
+    }
+]

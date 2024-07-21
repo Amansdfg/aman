@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Personal from "./components/Personal";
 import Skill from "./components/Skills";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 function App(){
   const [theme, setTheme] = useState(false);
 
@@ -19,7 +20,9 @@ function App(){
       <Home theme={theme}/>
       <Personal theme={theme}/>
       <Skill/>
+      <Contact/>
       <Footer theme={theme}/>
+
     </>
   )
 }

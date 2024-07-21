@@ -1,6 +1,7 @@
 import coding from "../assets/coding.gif";
 import { skills } from "../data";
 import {useEffect} from "react";
+import { card } from "../data";
 function Skill(){
     useEffect(() => {    
         function handleIntersection(entries) {
@@ -22,7 +23,8 @@ function Skill(){
 
     return(
         <section id="skills">
-            <div className="personal-head">
+            <div className="head">
+                <span>Skills</span>
                 <h3>Skills</h3>            
             </div>
             <div className="skills">
@@ -38,15 +40,27 @@ function Skill(){
                             <div style={{width:data.skill+"%"}} className="persent">
                             </div>
                         </li>    
-                    ))}
-                    <li>
-
-                    </li>
+                    ))}                                                
                 </ul>                
                 <img src={coding}/>
             </div>
-
+            <div className="cards">                
+                {card.map((item)=>(
+                    <div className="card" key={item.id}>
+                    <div className="inner" >
+                        <div className="front">
+                            <img src={item.img}/>
+                            <h2>{item.name}</h2>
+                        </div>
+                        <div className="back">                        
+                            <h2>{item.text}</h2>
+                        </div>
+                    </div>
+                    </div>
+                ))}
+            </div>
         </section>
+
     )
 }
 export default Skill;
