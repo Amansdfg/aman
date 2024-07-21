@@ -1,5 +1,5 @@
 import {social} from "../data"
-import reactLogo from "../assets/react.svg"
+import reactLogo from "../assets/reactHome.svg"
 function Home({theme}){
     return(
         <section id="home">

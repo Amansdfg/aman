@@ -20,16 +20,15 @@ function Header({onChangeTheme,theme}){
             <h1>{header.full_name}</h1>
             {
             !isOpen &&
-                <>
+            <>
                 <ul>
                     {header.list.map((item)=>(
                         <li key={item.name}><a href={item.href}>{item.name}</a></li>
                     ))}                    
-                </ul>
-            
+                </ul>            
                 <button  onClick={()=>onChangeTheme()} id="darkmode"><img src={theme?sun:moon} alt="aman" className={theme?"active":null}/></button>
             </>
-        }
+            }
             <button onClick={()=>open()} className="menu" hidden> <img className="btn-menu" src={isOpen?(theme?menuDark:menu):(!theme?close:closeDark)} alt="aman"/></button>
         </header>
     )

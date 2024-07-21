@@ -50,10 +50,13 @@ function Skill({theme}){
                     <div className="inner" >
                         <div className="front">
                             <img src={!theme?item.img:item.imgDark}/>
-                            <h2>{item.name}</h2>
+                            <h2>{item.head}</h2>
+                            <span>{item.text}</span>
                         </div>
-                        <div className="back">                        
-                            <h2>{item.text}</h2>
+                        <div className="back">
+                            <img src={!theme?item.imgBack:item.imgBackDark}/>                        
+                            <h2>{item.headBack}</h2>
+                            <span>{item.textBack}</span>
                         </div>
                     </div>
                     </div>

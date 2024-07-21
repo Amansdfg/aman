@@ -1,3 +1,5 @@
+import git from "./assets/git.svg"
+import gitDark from "./assets/gitDark.svg"
 import github from "./assets/github.svg"
 import githubDark from "./assets/githubDark.svg"
 import linkedIn from "./assets/linkedIn.svg"
@@ -14,8 +16,13 @@ import phone from "./assets/phone.svg"
 import phoneDark from "./assets/phoneDark.svg"
 import java from "./assets/java.svg";
 import javaDark from "./assets/javaDark.svg";
+// import spring from "./assets/spring.svg"
+import spring from "./assets/jakarta.svg"
+import springDark from "./assets/springDark.svg"
 import javascipt from "./assets/javascript.svg"
 import javasciptDark from "./assets/javascriptDark.svg"
+import react from "./assets/react.svg"
+import reactDark from "./assets/reactDark.svg"
 export const currentYear=new Date().getFullYear();
 export const header={
 
@@ -128,23 +135,35 @@ export const skills=[
 export const card=[
     {
         id:"1",
-        name:"Java",
+        head:"Java",
+        text:"Java Expert: Skilled in object-oriented programming, cross-platform development, and performance optimization.",
         img:java,
         imgDark:javaDark,
-        text:"Spring"
+        headBack:"Spring",
+        textBack:"Spring Pro: Proficient in Spring Boot, Dependency Injection, and scalable, maintainable application development.",
+        imgBack:spring,
+        imgBackDark:springDark,
     },
     {
         id:"2",
-        name:"JavaScript",
+        head:"JavaScript",
+        text:"JavaScript Expert: Proficient in dynamic web development, ES6+, and interactive user interfaces.",
         img:javascipt,
         imgDark:javasciptDark,
-        text:"React"
+        headBack:"React",
+        textBack:"React Pro: Skilled in building responsive, component-based UIs with state management and Hooks.",
+        imgBack:react,
+        imgBackDark:reactDark,
     },
     {
         id:"3",
-        name:"Git",
-        img:github,
-        imgDark:githubDark,
-        text:"GitHub/Gitlab"
+        head:"Git",
+        text:"Git Expert: Master in version control, branching, merging, and collaborative workflows.",
+        img:git,
+        imgDark:gitDark,    
+        headBack:"GitHub/Gitlab",
+        textBack:"GitHub/GitLab Pro: Skilled in repository management, CI/CD pipelines, and code review processes.",
+        imgBack:github,
+        imgBackDark:githubDark,
     }
 ]

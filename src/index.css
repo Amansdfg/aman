@@ -11,7 +11,6 @@
 }
 .menu{
     border: none;
-
 }
 :root {
     --main-color: #2768d9; 
@@ -97,12 +96,6 @@ header a:hover {
     padding-block:0;   
     background-color: transparent;
 }
-/* #darkmode img::before{
-    height: 33px;        
-    width: 33px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-} */
 #profile{
     height: 100vh;
     width: 100vw;
@@ -123,6 +116,7 @@ header a:hover {
 .home-img img{
     height: 10rem;
     animation: logo-spin infinite 20s linear;
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 footer{
     display: flex;
@@ -156,7 +150,7 @@ footer ul h3{
 }
 @keyframes logo-spin{
     from{
-        transform: rotate(0deg);
+        transform: rotate(0deg);        
     }
     to{
         transform: rotate(260deg);
@@ -287,16 +281,17 @@ footer ul h3{
     -webkit-backface-visibility: hidden;
      /* Safari */
     backface-visibility: hidden;
+    img{
+        margin-top: 30px;
+        width: 5rem;
+    }
   }
   
   
   .front {
     background-color: #bbb;
     color: black;
-    img{
-        margin-top: 30px;
-        width: 5rem;
-    }
+    
   }
   
   .back {
@@ -344,7 +339,7 @@ textarea{
         width: 100%;
     }
 }
-@media(max-width:600px)  {
+@media (max-width:600px) {
     header{
         position: relative;
         display: flex;    
@@ -439,6 +434,34 @@ textarea{
         margin: 0;
     }
 }
+@media (min-width:600px) {  
+    header{
+        position: fixed;  
+        padding: 10px 3%;
+        transition: 0.2s;
+        box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    }
+    header a{
+        font-size: 1rem;
+        padding: 5px 5px;
+    }
+    header h1{
+        font-size: 1.2rem;    
+        margin: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }      
+    header ul{            
+        gap:3px;        
+    }      
+}
+@media (max-width:768px) {  
+    .cards{
+        flex-direction: column;        
+    }
+    .card{
+        width: 100%;
+    }
+}
 @media (min-width:768px) {  
     header h1{
         font-size: 1.3rem;
@@ -472,7 +495,7 @@ textarea{
     }
     section{
         padding: 30px 5%;
-    }
+    }    
 }
 @media (min-width:1280px) {
     header h1{
