@@ -1,6 +1,25 @@
 import coding from "../assets/coding.gif";
 import { skills } from "../data";
+import {useEffect} from "react";
 function Skill(){
+    useEffect(() => {    
+        function handleIntersection(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5
+        });    
+        const targets = document.querySelectorAll('.persent');
+        targets.forEach(target => observer.observe(target));
+        return () => {
+            targets.forEach(target => observer.unobserve(target));
+        };
+    }, []);
+
     return(
         <section id="skills">
             <div className="personal-head">

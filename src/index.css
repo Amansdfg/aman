@@ -205,6 +205,17 @@ footer ul h3{
         flex-direction: column;
         gap:0px;
     }
+    img{
+        animation: animate 3s;
+    }
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }    
 }
 .skills img{
     object-fit:contain;
@@ -219,11 +230,14 @@ footer ul h3{
 .persent{
     position: absolute;
     bottom: 10;
-    left: 0;
-    
-    /* background-color: #2768d9; */
+    left: 0;    
     height: 0.5rem;
+    background-color:#2768d9;   
 }
+.animate{
+    animation: persent 3s;
+}
+
 .full-persent{
     position: absolute;
     bottom: 10;
@@ -242,11 +256,11 @@ footer ul h3{
     }
 }
 @keyframes persent{
-    from{
-        background-color: red;
+    0%{
+        width: 0;
     }
-    to{
-        background-color: blue;
+    persent{
+        width: 100%;
     }
 }
 @media (max-width:600px) {

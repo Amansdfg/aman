@@ -5,7 +5,7 @@ import menu from "../assets/menu.svg"
 import close from "../assets/close.svg"
 import { useState } from "react";
 function Header({onChangeTheme,theme}){
-    const[isOpen,setIsOpen]=useState(false);
+    const[isOpen,setIsOpen]=useState(true);
     function open(){
         if(isOpen){
             setIsOpen(false);
