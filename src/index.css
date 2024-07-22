@@ -315,6 +315,9 @@ footer ul h3{
         font-size: 1.25rem;
     }
 }
+.menu{
+    display: none;
+}
 .input{
     padding: 10px;
 }
@@ -340,12 +343,21 @@ textarea{
     }
 }
 @media (max-width:600px) {
+    .menu{
+        display: block;
+    }
     header{
         position: relative;
         display: flex;    
         padding: 10px 3%;
         transition: 0.2s;
         box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    }
+    .nav{
+        display: none;
+    }
+    .nav.open{
+        display: block;
     }
     header a{
         font-size: 0.75rem;
@@ -360,11 +372,13 @@ textarea{
         display: block;
         background-color: var(--bg-color);
     }        
-    header ul{
+    
+    
+    /* header ul{
         display: flex;
         flex-direction: column;
         gap:3px;        
-    }    
+    }     */
     #darkmode img{
         height: 15px;        
         width: 15px;
