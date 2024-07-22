@@ -6,10 +6,5 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: '/src/main.jsx' // Make sure this matches your entry file
-      }
-    }
   }
 });
