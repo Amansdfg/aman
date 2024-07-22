@@ -16,8 +16,8 @@ import phone from "./assets/phone.svg"
 import phoneDark from "./assets/phoneDark.svg"
 import java from "./assets/java.svg";
 import javaDark from "./assets/javaDark.svg";
-import spring from "./assets/spring.svg"
-// import spring from "./assets/jakarta.svg"
+// import spring from "./assets/spring.svg"
+import spring from "./assets/jakarta.svg"
 import springDark from "./assets/springDark.svg"
 import javascipt from "./assets/javascript.svg"
 import javasciptDark from "./assets/javascriptDark.svg"
