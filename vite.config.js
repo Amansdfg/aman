@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/aman/',  // Ensure this matches your deployment base path
+  base: '/aman/',  
   plugins: [react()],
   build: {
     outDir: 'dist',

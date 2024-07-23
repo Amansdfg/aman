@@ -251,6 +251,29 @@ footer ul h3{
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
+.projects{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* flex: 1; */
+    gap:1rem;
+}
+.project-img{
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.project-img img{
+    width: 100%;
+    display: block;
+}
+.project-img img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    background-size: 100%;
+}
 .cards{
     display: flex;
     width: 100%;

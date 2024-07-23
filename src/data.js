@@ -16,13 +16,14 @@ import phone from "./assets/phone.svg"
 import phoneDark from "./assets/phoneDark.svg"
 import java from "./assets/java.svg";
 import javaDark from "./assets/javaDark.svg";
-// import spring from "./assets/spring.svg"
-import spring from "./assets/jakarta.svg"
+import spring from "./assets/spring.svg"
+// import spring from "./assets/jakarta.svg"
 import springDark from "./assets/springDark.svg"
 import javascipt from "./assets/javascript.svg"
 import javasciptDark from "./assets/javascriptDark.svg"
 import react from "./assets/react.svg"
 import reactDark from "./assets/reactDark.svg"
+import tic_tac_toe from "./assets/portfolio/tic-tac-toe.png";
 export const currentYear=new Date().getFullYear();
 export const header={
 
@@ -166,4 +167,29 @@ export const card=[
         imgBack:github,
         imgBackDark:githubDark,
     }
+]
+export const porfolio=[
+    {
+        id:"p1",
+        img:tic_tac_toe,
+        text:"Tic Tac Toe Game"
+    },
+    {
+        id:"p2",
+        img:tic_tac_toe,
+        text:"Tic Tac Toe Game"
+    }, {
+        id:"p3",
+        img:tic_tac_toe,
+        text:"Tic Tac Toe Game"
+    }, {
+        id:"p4",
+        img:tic_tac_toe,
+        text:"Tic Tac Toe Game"
+    },
+    {
+        id:"p5",
+        img:tic_tac_toe,
+        text:"Tic Tac Toe Game"
+    },
 ]
