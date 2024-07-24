@@ -254,7 +254,7 @@ footer ul h3{
 .projects{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     /* display: flex; */
     /* justify-content: center; */
     /* flex-wrap: wrap; */
