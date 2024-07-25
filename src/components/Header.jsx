@@ -24,7 +24,7 @@ function Header({onChangeTheme,theme}){
             <button onClick={()=>open()} className="menu"> <img className="btn-menu" src={isOpen?(theme?closeDark:close):(!theme?menu:menuDark)} alt="aman"/></button>    
             </div>
         {
-            isOpen&&
+            isOpen &&
         <div id="mobile-menu">
             <div>
                 {header.list.map((data)=>(

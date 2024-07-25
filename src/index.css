@@ -280,7 +280,7 @@ footer ul h3{
     display: flex;
     width: 100%;
     justify-content: center;
-    gap:30px;
+    gap:5rem;
 }
 .card {
     background-color: transparent;
@@ -314,7 +314,7 @@ footer ul h3{
   
   
   .front {
-    background-color: #bbb;
+    background-color: rgba(222, 122, 34, 67%);
     color: black;
     
   }
@@ -360,7 +360,7 @@ textarea{
     color: var(--bg-color);
 }
 #mobile-menu{
-    display: hidden;
+    display: none;
 }
 @keyframes persent{
     0%{
@@ -413,7 +413,7 @@ textarea{
         padding: 5px 5px;
     }
     header h1{
-        font-size: 0.75rem;    
+        font-size: 1rem;    
         margin: 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
