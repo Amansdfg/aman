@@ -78,20 +78,6 @@ header a {
 header a:hover {
     color: #2768d9; 
 }
-.home {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr;
-    align-items: center;
-    gap: 1rem;
-    opacity: 1;
-    transition: 1s;
-    animation: show 1s;
-    animation-fill-mode: both;
-    animation-delay: 0.5s;
-}
 #darkmode{
     border-width: 0;    
     padding-inline:0; 
@@ -111,9 +97,8 @@ header a:hover {
     grid-template-columns: 0.2fr 1fr 1fr;
     align-items: center;
     gap: 1rem;
-    animation: side 1s;
-    animation-fill-mode: both;
-    animation-delay: 0.5s;
+    animation: slide-in-from-button 2s ease-out;
+    /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.6); */
 }
 .home-img img{
     height: 10rem;
@@ -165,15 +150,16 @@ footer ul h3{
         height: 3rem;
     }
 }
-
-@keyframes side{
-    0%{
-        opacity: 0;
+@keyframes slide-in-from-button {
+    from {
+      opacity: 0;
+      transform: translateX(10%);
     }
-    100%{
-        opacity: 1;
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
-}
+  }
 .head{
     text-align: center;
     font-size: 1.5rem;
@@ -474,7 +460,7 @@ textarea{
     }
     .skill{
         width: 100%;            
-        font-size: 0.5rem;
+        /* font-size: 1rem; */
     }
     section{
         margin: 10px;
