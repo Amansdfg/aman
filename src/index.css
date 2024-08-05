@@ -74,6 +74,7 @@ header a {
     font-size: 1.25rem;
     color: var(--text-color);
     font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header a:hover {
     color: #2768d9; 
@@ -516,7 +517,7 @@ textarea{
         font-size: 1.3rem;
     }
     header a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     header ul{
@@ -531,7 +532,7 @@ textarea{
         font-size: 1.5rem;
     } 
     header a {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     header ul{
         gap:4rem;
@@ -551,7 +552,7 @@ textarea{
         font-size: 1.8rem;
     }
     header a {
-        font-size: 1.45rem;
+        font-size: 1.1rem;
     }
     header ul{
         gap:4rem;
