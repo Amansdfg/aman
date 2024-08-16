@@ -24,6 +24,7 @@ import javasciptDark from "./assets/javascriptDark.svg"
 import react from "./assets/react.svg"
 import reactDark from "./assets/reactDark.svg"
 import tic_tac_toe from "./assets/portfolio/tic-tac-toe.png";
+import petProject from "./assets/project.png";
 export const currentYear=new Date().getFullYear();
 export const header={
 
@@ -176,20 +177,7 @@ export const porfolio=[
     },
     {
         id:"p2",
-        img:tic_tac_toe,
-        text:"Tic Tac Toe Game"
-    }, {
-        id:"p3",
-        img:tic_tac_toe,
-        text:"Tic Tac Toe Game"
-    }, {
-        id:"p4",
-        img:tic_tac_toe,
-        text:"Tic Tac Toe Game"
-    },
-    {
-        id:"p5",
-        img:tic_tac_toe,
-        text:"Tic Tac Toe Game"
+        img:petProject,
+        text:"Chatgram"
     },
 ]
