@@ -173,11 +173,13 @@ export const porfolio=[
     {
         id:"p1",
         img:tic_tac_toe,
-        text:"Tic Tac Toe Game"
+        title:"Tic Tac Toe Game",
+        description:"A game played on a piece of paper in which two players write either O or X in a pattern of nine squares."
     },
     {
         id:"p2",
         img:petProject,
-        text:"Chatgram"
+        title:"Chatgram",
+        description:"ChatGram is a social networking platform that allows users to chat, share posts, and connect with friends in real time"
     },
 ]
