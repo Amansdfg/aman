@@ -25,6 +25,7 @@ import react from "./assets/react.svg"
 import reactDark from "./assets/reactDark.svg"
 import tic_tac_toe from "./assets/portfolio/tic-tac-toe.png";
 import petProject from "./assets/project.png";
+import snakeGame from "./assets/snakeGame.png";
 export const currentYear=new Date().getFullYear();
 export const header={
 
@@ -174,12 +175,21 @@ export const porfolio=[
         id:"p1",
         img:tic_tac_toe,
         title:"Tic Tac Toe Game",
-        description:"A game played on a piece of paper in which two players write either O or X in a pattern of nine squares."
+        description:"A game played on a piece of paper in which two players write either O or X in a pattern of nine squares.",
+        href:"https://amansdfg.github.io/Tic-Tac-Toe/",
     },
     {
         id:"p2",
         img:petProject,
         title:"Chatgram",
-        description:"ChatGram is a social networking platform that allows users to chat, share posts, and connect with friends in real time"
+        description:"ChatGram is a social networking platform that allows users to chat, share posts, and connect with friends in real time",
+        href:"https://github.com/Amansdfg/JWT",
+    },
+    {
+        id:"p3",
+        img:snakeGame,
+        title:"Snake game",
+        description:"Snake is a genre of action video games where the player maneuvers the end of a growing line, often themed as a snake.",
+        href:"https://amansdfg.github.io/SnakeGame/",
     },
 ]

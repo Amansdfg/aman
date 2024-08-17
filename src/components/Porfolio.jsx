@@ -9,7 +9,7 @@ const Porfolio=()=>{
             <ul className="projects">
                 {porfolio.map(item=>(
                  <li key={item.id} className="project-item">
-                    <a href="https://amansdfg.github.io/Tic-Tac-Toe/">
+                    <a href={item.href}>
                         <img src={item.img} alt={item.title}/>
                         <div className="project-content">
                             <p className="content-title">{item.title}</p>
