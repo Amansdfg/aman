@@ -6,6 +6,7 @@ import Skill from "./components/Skills";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Porfolio from "./components/Porfolio";
+import Container from "./components/Container";
 function App(){
   const [theme, setTheme] = useState(false);
 
@@ -20,11 +21,11 @@ function App(){
       <Header onChangeTheme={toggleTheme} theme={theme}/>
       <Home theme={theme}/>
       <Personal theme={theme}/>
-      <Skill theme={theme}/>
-      <Porfolio/>
+      <Skill theme={theme}/>    
+      <Porfolio/>    
+      <Container/>
       <Contact/>
-      <Footer theme={theme}/>
-
+      <Footer theme={theme}/>    
     </>
   )
 }

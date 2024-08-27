@@ -245,25 +245,8 @@ footer ul h3{
     width: 100%;
     text-align: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
-    /* flex: 1; */
     gap:1rem;
 }
-/* .project-img{
-    overflow: hidden;
-    border-radius: 0.5rem;
-}
-.project-img img{
-    width: 100%;
-    display: block;
-}
-.project-img img:hover{
-    transform: scale(1.1);
-    transition: 1s;
-    background-size: 100%;
-} */
 .cards{
     display: flex;
     width: 100%;
@@ -364,7 +347,6 @@ footer ul h3{
   
   
   .front {
-    /* background-color: rgba(222, 122, 34, 67%); */
     background-color: #A6B37D;
     color: black;
     
@@ -414,6 +396,43 @@ textarea{
 #mobile-menu{
     display: none;
 }
+#container{
+    display: flex;
+    padding: 40px 100px;
+    justify-content: space-between;
+}
+.item {
+    position: relative;
+}
+.item h3 {
+    padding: 0;
+    margin: 5px;
+}
+.swipe {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    transition: transform 2s ease
+}
+.swipe span {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+.item:hover .swipe {
+    transform: translateY(-30px);
+}
+
+.item:hover .swipe span {
+    opacity: 1;
+}
+.img {
+    width: 300px;
+    height: 300px;
+}
+
 @keyframes persent{
     0%{
         width: 0;

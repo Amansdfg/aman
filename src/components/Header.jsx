@@ -6,7 +6,11 @@ import menuDark from "../assets/menuDark.svg"
 import close from "../assets/close.svg"
 import closeDark from "../assets/closeDark.svg"
 import { useState } from "react";
+import { useParams } from "react-router";
 function Header({onChangeTheme,theme}){
+    const param=useParams();
+    console.log(param);
+    
     const[isOpen,setIsOpen]=useState(false);
     function open(){
         setIsOpen(prev=>!prev);        
@@ -28,7 +32,7 @@ function Header({onChangeTheme,theme}){
         <div id="mobile-menu">
             <div>
                 {header.list.map((data)=>(
-                    <a key={data.name} href={data.href}>{data.name}</a>
+                    <a  key={data.name} href={data.href}>{data.name}</a>
                 ))}
             </div>
         </div>
