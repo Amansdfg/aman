@@ -396,54 +396,48 @@ textarea{
 #mobile-menu{
     display: none;
 }
-#container {
+#container{
     display: grid;
     width: 100%;
     text-align: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap:1rem;        
 }
-
 .item {
     position: relative;
-    overflow: hidden;
-    background-color: #f8f8f8;
+    overflow: hidden; /* Ensure no overflow from the swipe container */
     border-radius: 1rem;
+    width:  350px;
+    height:200px;   
 }
-
+.item h3 {
+    padding: 0;    
+}
 .swipe {
     position: absolute;
-    bottom: -80px;
+    bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 1rem;
-    transition: transform 0.5s ease;
-    border-radius: 0 0 1rem 1rem;
-}
-
-.swipe h3 {
-    margin: 0;
-    padding-bottom: 0.5rem;
+    transition: transform 2s ease;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)); /* Gradient with opacity */    
 }
 .swipe span {
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 2s ease;
 }
 .item:hover .swipe {
-    transform: translateY(-90px);
+    transform: translateY(-30px);
 }
 .item:hover .swipe span {
-    opacity: 1; 
-    transform: translateY(-20px);
+    opacity: 1;
 }
 .img {
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    border-radius:1rem;        
 }
- 
 @keyframes persent{
     0%{
         width: 0;

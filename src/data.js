@@ -27,6 +27,11 @@ import tic_tac_toe from "./assets/portfolio/tic-tac-toe.png";
 import petProject from "./assets/project.png";
 import snakeGame from "./assets/snakeGame.png";
 import techProduct from "./assets/techproduct.png"
+
+import webSocket from "./assets/webSocket_CV.jpg"
+import tailwind from "./assets/TailwindCSS_CV.png"
+import jwt from "./assets/JWT_CV.png"
+
 export const currentYear=new Date().getFullYear();
 export const header={
 
@@ -200,4 +205,24 @@ export const porfolio=[
         description:"Snake is a genre of action video games where the player maneuvers the end of a growing line, often themed as a snake.",
         href:"https://github.com/Amansdfg/TechProduct",
     },
+]
+export const other=[
+    {
+        id:"o1",
+        img:jwt,
+        name:"JSON Web Token",
+        description:"A compact, URL-safe token used for securely transmitting information between parties as a JSON object."        
+    },
+    {
+        id:"o2",
+        img:webSocket,
+        name:"WebSocket",
+        description:"A communication protocol providing full-duplex, low-latency connections between clients and servers over a single, long-lived connection."        
+    },
+    {
+        id:"o3",
+        img:tailwind,
+        name:"Tailwind CSS",
+        description:"A utility-first CSS framework that allows rapid UI development by composing classes for styling elements directly in HTML."        
+    }
 ]
