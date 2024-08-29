@@ -26,6 +26,7 @@ import reactDark from "./assets/reactDark.svg"
 import tic_tac_toe from "./assets/portfolio/tic-tac-toe.png";
 import petProject from "./assets/project.png";
 import snakeGame from "./assets/snakeGame.png";
+import techProduct from "./assets/techproduct.png"
 export const currentYear=new Date().getFullYear();
 export const header={
 
@@ -191,5 +192,12 @@ export const porfolio=[
         title:"Snake game",
         description:"Snake is a genre of action video games where the player maneuvers the end of a growing line, often themed as a snake.",
         href:"https://amansdfg.github.io/SnakeGame/",
+    },
+    {
+        id:"p4",
+        img:techProduct,
+        title:"Tech Product",
+        description:"Snake is a genre of action video games where the player maneuvers the end of a growing line, often themed as a snake.",
+        href:"https://github.com/Amansdfg/TechProduct",
     },
 ]
