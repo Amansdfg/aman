@@ -7,29 +7,29 @@ import close from "../assets/close.svg"
 import closeDark from "../assets/closeDark.svg"
 import { useState } from "react";
 import { useParams } from "react-router";
+import classes from "./Header.module.css"
 function Header({onChangeTheme,theme}){
-    const param=useParams();
-    console.log(param);
-    
+    const param=useParams();    
+
     const[isOpen,setIsOpen]=useState(false);
     function open(){
         setIsOpen(prev=>!prev);        
     }    
     return(
         <header>        
-            <div className="header">
-            <h1>{header.full_name}</h1>            
-            <ul className={`nav ${isOpen ? 'open' : ''}`}>
+            <div className={classes.header}>
+            <h1 className={classes.header_h1}>{header.full_name}</h1>            
+            <ul className={classes.header_ul +` nav ${isOpen ? 'open' : ''}`}>
                 {header.list.map((item)=>(
-                    <li key={item.name}><a href={item.href}>{item.name}</a></li>
+                    <li key={item.name}><a className={classes.header_a} href={item.href}>{item.name}</a></li>
                 ))}                    
             </ul>            
-            <button  onClick={()=>onChangeTheme()} id="darkmode"><img src={theme?sun:moon} alt="aman" className={theme?"active":null}/></button>                    
-            <button onClick={()=>open()} className="menu"> <img className="btn-menu" src={isOpen?(theme?closeDark:close):(!theme?menu:menuDark)} alt="aman"/></button>    
+            <button  onClick={()=>onChangeTheme()} className={classes.darkmode}><img src={theme?sun:moon} alt="aman" className={theme?"active":null}/></button>                    
+            <button onClick={()=>open()} className={classes.menu}> <img className="btn-menu" src={isOpen?(theme?closeDark:close):(!theme?menu:menuDark)} alt="aman"/></button>    
             </div>
         {
             isOpen &&
-        <div id="mobile-menu">
+        <div className={classes.mobile_menu}>
             <div>
                 {header.list.map((data)=>(
                     <a  key={data.name} href={data.href}>{data.name}</a>

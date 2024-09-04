@@ -1,0 +1,38 @@
+.head{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 400px;
+    margin: 10px auto;
+    span{
+        font-size: 1.25rem;
+    }
+}
+
+.input{
+    padding: 10px;
+}
+textarea{
+    height: 200px;
+    resize: vertical;
+    cursor: se-resize;
+}
+.btn_send{
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--bg-color);
+}
+@media (max-width:600px){
+    .form{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+}

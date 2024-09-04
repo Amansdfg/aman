@@ -1,0 +1,48 @@
+.head{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.personal_main{
+    margin-top: 5rem;
+    font-size: 1.25rem;
+}
+.personal_footer{
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    gap:0.25rem;
+}
+.personal_info{
+    display: flex;
+    gap: 10px;
+    justify-content: start;    
+    font-size:1.25rem;
+    width: 30rem;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:#0312a1
+}
+.button{
+    background-color:#2768d9;
+    padding: 0.5rem 0.8rem;
+    color: white;
+    border-radius: 0.5rem;
+}
+@keyframes persent{
+    0%{
+        width: 0;
+    }
+    persent{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .personal_info{
+        width: 100%;
+    }
+    .personal_main{
+        font-size: 0.8rem;
+    }
+}

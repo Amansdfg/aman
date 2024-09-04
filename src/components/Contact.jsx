@@ -1,6 +1,6 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
-
+import classes from "./Contact.module.css"
 function Contact() {
     const [formData, setFormData] = useState({
         from_name: '',
@@ -75,16 +75,16 @@ function Contact() {
 
     return (
         <section id="contact">
-            <div className="head">
+            <div className={classes.head}>
                 <span>Contact</span>
                 <h2>Contact with me</h2>
             </div>
-            <form className="form" onSubmit={handleSubmit}>
+            <form className={classes.form} onSubmit={handleSubmit}>
                 <span>Name</span>
                 <input 
                     type="text"
                     name="from_name"
-                    className="input" 
+                    className={classes.input} 
                     placeholder="Your Name" 
                     value={formData.from_name}
                     onChange={handleChange}
@@ -94,7 +94,7 @@ function Contact() {
                 <input 
                     type="email"
                     name="reply_to"
-                    className="input" 
+                    className={classes.input}
                     placeholder="Your Email" 
                     value={formData.reply_to}
                     onChange={handleChange}
@@ -102,14 +102,14 @@ function Contact() {
                 />
                 <span>Message</span>
                 <textarea 
-                    className="input" 
+                    className={classes.input}
                     placeholder="Your Message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     required
                 />
-                <button type="submit" className="btn-send">Send</button>
+                <button type="submit" className={classes.btn_send}>Send</button>
                 {status && <p>{status}</p>}
                 {error && <p style={{ color: 'red' }}>{error}</p>}
             </form>

@@ -1,0 +1,40 @@
+.social_network{
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    height: 3rem;
+}
+.home_info{
+    font-size: 14px;
+}
+.home_img {
+    height: 10rem;
+    animation: logo-spin infinite 20s linear;
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.button{
+    background-color:#2768d9;
+    padding: 0.5rem 0.8rem;
+    color: white;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+@keyframes logo-spin{
+    from{
+        transform: rotate(0deg);        
+    }
+    to{
+        transform: rotate(260deg);
+    }
+}
+@media(max-width:600px){
+    .img{
+        height: 40px;
+    }
+    .home_img{
+        height: 100px;
+    }
+
+}

@@ -1,12 +1,13 @@
 import {personal_info} from "../data"
+import classes from "./Personal.module.css"
 export default function Personal({theme}){
     return(
         <section id="personal">
-            <div className="head">
+            <div className={classes.head}>
                 <span>Aman Kalabay</span>
                 <h3>Introdation</h3>
             </div>
-            <div className="personal-main">
+            <div className={classes.personal_main}>
                 <span>Good day! My name is Aman, and I'm a motivated student with a deep interest in Java development and programming. I am eager to learn and contribute to projects in the field.</span>
                 <ul>
                     <li>What I can offer:</li>
@@ -23,17 +24,18 @@ export default function Personal({theme}){
                     <li>My goals:</li>
                     <li>- I aspire to further develop my skills in Java development by learning new concepts and methodologies. My goal is to become an expert in this field and make meaningful contributions to projects I work on.</li>
                     <li>- I would be excited to discuss opportunities for contribute to your team's success!</li>
-                    <li className="aman-nama">Aman Kalabay</li>
+                    <li className={classes.text}>Aman Kalabay</li>
                 </ul>
             </div>
-            <div className="personal-footer">
+            <div className={classes.personal_footer}>
                 {personal_info.map((data)=>(
-                    <div key={data.id} className="personal-info">
+                    <div key={data.id} className={classes.personal_info}>
                         <img src={theme?data.imgDark:data.img} alt={data.name}/>
                         <span>{data.name}</span>
                     </div>
                 ))}                              
             </div>
+            <a href="/aman/Aman_Kalabay_CV.pdf" className={classes.button}>Download CV</a>
         </section>
     )
 }
