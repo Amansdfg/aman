@@ -5,7 +5,7 @@ export default function Container(){
         <section id="container">
         {
         other.map(item=>(
-            <div className="item">
+            <div className="item" key={item.id}>
                 <img className="img" src={item.img}/>
                 <div className="swipe">
                     <h3>{item.name}</h3>
