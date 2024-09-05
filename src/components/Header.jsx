@@ -18,21 +18,21 @@ function Header({onChangeTheme,theme}){
     return(
         <header>        
             <div className={classes.header}>
-            <h1 className={classes.header_h1}>{header.full_name}</h1>            
-            <ul className={classes.header_ul +` nav ${isOpen ? 'open' : ''}`}>
-                {header.list.map((item)=>(
-                    <li key={item.name}><a className={classes.header_a} href={item.href}>{item.name}</a></li>
-                ))}                    
-            </ul>            
-            <button  onClick={()=>onChangeTheme()} className={classes.darkmode}><img src={theme?sun:moon} alt="aman" className={theme?"active":null}/></button>                    
-            <button onClick={()=>open()} className={classes.menu}> <img className="btn-menu" src={isOpen?(theme?closeDark:close):(!theme?menu:menuDark)} alt="aman"/></button>    
+                <h1 className={classes.header_h1}>{header.full_name}</h1>            
+                <ul className={`${classes.header_ul} ${classes.nav} ${isOpen ? classes.open : ''}`}>
+                    {header.list.map((item)=>(
+                        <li key={item.name}><a className={classes.header_a} href={item.href}>{item.name}</a></li>
+                    ))}                    
+                </ul>            
+                <img onClick={()=>onChangeTheme()} src={theme?sun:moon} alt="aman" className={classes.darkmode+" "+theme?classes.active:null}/>                     
+                <img onClick={()=>open()} className={classes.btn_menu +" "+classes.menu} src={isOpen?(theme?closeDark:close):(!theme?menu:menuDark)} alt="aman"/>            
             </div>
         {
             isOpen &&
         <div className={classes.mobile_menu}>
-            <div>
+            <div className={classes.mobile_menu_div}>
                 {header.list.map((data)=>(
-                    <a  key={data.name} href={data.href}>{data.name}</a>
+                    <a  className={classes.mobile_menu_a} key={data.name} href={data.href}>{data.name}</a>
                 ))}
             </div>
         </div>
