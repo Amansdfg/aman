@@ -61,16 +61,20 @@ header {
         display: none;
     }    
     .header_a{
-        font-size: 0.75rem;
+        font-size: 0.5rem;
         padding: 5px 5px;
     }
     .header_h1{
-        font-size: 0.8rem;    
+        font-size: 0.6rem;    
         margin: 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .header_ul{            
-        gap:1rem;        
+        gap:0rem;        
+    } 
+    .darkmode{
+        height: 15px;        
+        width: 15px;
     } 
     .mobile_menu{
         display: block;
@@ -91,11 +95,11 @@ header {
         box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
     }
     .header_a{
-        font-size: 1rem;
+        font-size: 0.7rem;
         padding: 5px 5px;
     }
     .header_h1{
-        font-size: 1rem;    
+        font-size: 0.7rem;    
         margin: 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }      
@@ -123,36 +127,36 @@ header {
 }
 @media(min-width:768px){
     .header_h1{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .header_a {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .header_ul{
-        gap:3.5rem;
+        gap:2rem;
     }
 }
 @media(min-width:1024px){
     .header_h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     } 
     .header_a {
         font-size: 1rem;
     }
     .header_ul{
-        gap:4rem;
+        gap:2.5rem;
     }
 }
 @media(min-width:1280px){
     .header_h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .header_a{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .header_ul{
-        gap:4rem;
+        gap:3rem;
     }
 }
 @media(min-width:1536px){

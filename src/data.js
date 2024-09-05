@@ -54,6 +54,14 @@ export const header={
             name:"Portfolio"
         },
         {
+            href:"#features",
+            name:"Features"
+        },
+        {
+            href:"#resume",
+            name:"Resume"
+        },
+        {
             href:"#contact",
             name:"Contact"
         },

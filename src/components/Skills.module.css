@@ -14,14 +14,20 @@
         gap:0px;
     }
 }
-@keyframes animate{
-    0%{
-        transform: rotateX(0deg);
+@keyframes fill {
+    from {
+        width: 0%;
     }
-    100%{
-        transform: rotateX(360deg);
-    }    
+    to {
+        width: var(--skill-width);
+    }
 }
+
+
+.animate {
+    animation: fill 3s ease forwards;
+}
+
 .skills img{
     object-fit:contain;
 }
@@ -39,10 +45,6 @@
     height: 0.5rem;
     background-color:#2768d9;   
 }
-.animate{
-    animation: persent 3s;
-}
-
 .full_persent{
     position: absolute;
     bottom: 10;
@@ -141,15 +143,16 @@
     }
 }
 @media(min-width:1024px){
-    .skill_head{
+    .skill{
         width: 25rem;
     }
     .skills{
         flex-direction: row;               
+        width: 100%;
     }
 }
 @media(min-width:768px){
-    .skill_head{
+    .skill{
         width: 100%;
     }
 }

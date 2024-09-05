@@ -1,3 +1,14 @@
+.head{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.features{
+    display: grid;
+    width: 100%;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap:1rem;        
+}
 .item {
     position: relative;
     overflow: hidden;
