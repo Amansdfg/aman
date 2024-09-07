@@ -15,11 +15,11 @@ export default function Resume() {
             <div className={classes.contact_info}>
                 <p>Email: <a href="mailto:kalabaiaman2006@gmail.com">kalabaiaman2006@gmail.com</a> | Phone: +7 (747) 539 7059 | Almaty, Kazakhstan</p>
                 <p>
-                    <a href="#">GitHub</a> | 
-                    <a href="#">LinkedIn</a> | 
-                    <a href="#">HackerRank</a> | 
-                    <a href="#">LeetCode</a> | 
-                    <a href="#">Portfolio</a>
+                    <a target='blank' href="https://github.com/Amansdfg">GitHub</a> | 
+                    <a target='blank' href="https://www.linkedin.com/in/aman-kalabay-4371542bb/" >LinkedIn</a> | 
+                    <a target='blank' href="https://www.hackerrank.com/profile/h230103375">HackerRank</a> | 
+                    <a target='blank' href='https://leetcode.com/u/Aman_0006/' >LeetCode</a> | 
+                    <a href="/">Portfolio</a>
                 </p>
             </div>
 
