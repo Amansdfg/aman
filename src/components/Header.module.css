@@ -5,11 +5,12 @@ header {
     right: 0;
     z-index: 1000;
     background: var(--bg-color);
-    padding: 7px 5%;
-    transition: 0.2s;
+    padding: 7px 5%;    
+    transition: 0.2s; 
     box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 .header{
+    transition: 2s;
     width: 100%;
     display: flex;
     align-items: center;    
@@ -51,7 +52,8 @@ header {
         width: 100%;
         position: relative;
         padding: 10px 3%;
-        transition: 0.2s;
+        transition: 2s ease;          
+        /* background-color: #2768d9; */
         box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
     }
     .header{
@@ -67,7 +69,7 @@ header {
         padding: 5px 5px;
     }
     .header_h1{
-        font-size: 0.6rem;    
+        font-size: 1.4rem;    
         margin: 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
@@ -77,10 +79,7 @@ header {
     .darkmode{
         height: 15px;        
         width: 15px;
-    } 
-    .mobile_menu{
-        display: block;
-    }
+    }  
     .menu{
         display: block;
     }
@@ -91,7 +90,9 @@ header {
     }  
     .mobile_menu{
         display: block;
-    }      
+        /* transition: 2s ;         */
+        transition: height 0.3s ease-in-out;
+    }            
     .mobile_menu_div{
         margin-top: 0.25rem;
         padding-left: 0.5rem;
@@ -113,9 +114,8 @@ header {
 }
 @media(min-width:600px){
     header{
-        position: fixed;  
-        padding: 10px 3%;
-        transition: 0.2s;
+        position: fixed;
+        padding: 10px 3%;    
         box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
     }
     .header_a{

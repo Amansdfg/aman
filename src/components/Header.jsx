@@ -24,7 +24,7 @@ function Header({onChangeTheme,theme}){
                         <li key={item.name}><a className={classes.header_a} href={item.href}>{item.name}</a></li>
                     ))}                    
                 </ul>            
-                <img onClick={()=>onChangeTheme()} src={theme?sun:moon} alt="aman" className={classes.darkmode+" "+theme?classes.active:null}/>                     
+                <img onClick={()=>onChangeTheme()} src={theme?sun:moon} alt="aman" className={classes.darkmode+" "+theme?classes.active:''}/>                     
                 <img onClick={()=>open()} className={classes.btn_menu +" "+classes.menu} src={isOpen?(theme?closeDark:close):(!theme?menu:menuDark)} alt="aman"/>            
             </div>
         {

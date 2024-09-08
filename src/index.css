@@ -55,6 +55,7 @@ section{
     grid-template-columns: 0.2fr 1fr 1fr;
     align-items: center;
     gap: 1rem;
+    transition: 2s;
     animation: slide-in-from-button 2s ease-out;    
 }
 @keyframes slide-in-from-button {

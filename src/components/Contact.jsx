@@ -31,8 +31,7 @@ function Contact() {
             setError('Please enter a valid email address.');
             setStatus('');
             return;
-        }
-
+        }        
         emailjs.send(
             'service_49wphax',            
             'template_33qpzxc',       
