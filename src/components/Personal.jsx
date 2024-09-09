@@ -1,8 +1,28 @@
+import { useEffect, useRef } from "react"
 import {personal_info} from "../data"
 import classes from "./Personal.module.css"
 export default function Personal({theme}){
+    const ref=useRef(null);
+    useEffect(()=>{
+        function handleIntersection(entries,observer){
+            entries.forEach(entry=>{
+                if(entry.isIntersecting){
+                    entry.target.classList.add(classes.animateSection);
+                    observer.unobserve(entry.target);
+                }
+            })
+        }
+        const observer=new IntersectionObserver(handleIntersection,{threshold:0.3});
+        const section=ref.current;
+        if(section){
+            observer.observe(section);
+        }
+        return () => {
+            if (section) observer.unobserve(section);
+        };
+    },[])
     return(
-        <section id="personal">
+        <section id="personal" ref={ref} className={classes.personSection}>
             <div className={classes.head}>
                 <span>Aman Kalabay</span>
                 <h3>Introdation</h3>

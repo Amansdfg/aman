@@ -6,7 +6,25 @@ import classes from "./Skills.module.css";
 
 function Skill({ theme }) {
     const skillRef = useRef([]);
-
+    const ref=useRef(null);
+    useEffect(()=>{
+        function handleIntersection(entries,observer){
+            entries.forEach(entry=>{
+                if(entry.isIntersecting){
+                    entry.target.classList.add(classes.animateSection);
+                    observer.unobserve(entry.target);
+                }
+            })
+        }
+        const observer=new IntersectionObserver(handleIntersection,{threshold:0.3});
+        const section=ref.current;
+        if(section){
+            observer.observe(section);
+        }
+        return () => {
+            if (section) observer.unobserve(section);
+        };
+    },[])
     useEffect(() => {
         function handleIntersection(entries) {
             entries.forEach(entry => {
@@ -27,7 +45,7 @@ function Skill({ theme }) {
     }, []);
 
     return (
-        <section id="skills">
+        <section id="skills" ref={ref} className={classes.skillSection}>
             <div className={classes.head}>
                 <span>Skills</span>
                 <h3>Skills</h3>

@@ -1,3 +1,13 @@
+.skillSection {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animateSection {
+    opacity: 1;
+    transform: translateY(0);
+}
 .head{
     text-align: center;
     font-size: 1.5rem;
@@ -73,7 +83,7 @@
     background-color: transparent;
     width: 300px;
     height: 350px;    
-    perspective: 1000px;
+    perspective: 1000px;    
 }
 .inner {
     position: relative;

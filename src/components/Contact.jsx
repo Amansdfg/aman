@@ -1,7 +1,28 @@
 import emailjs from "emailjs-com";
-import { useState } from "react";
+import { useEffect, useState,useRef } from "react";
 import classes from "./Contact.module.css"
 function Contact() {
+    const ref=useRef(null);
+    useEffect(()=>{
+        function handleIntersection(entries,observer){
+            entries.forEach(entry=>{
+                if(entry.isIntersecting){
+                    entry.target.classList.add(classes.animateSection);
+                    observer.unobserve(entry.target);
+                }
+            })
+        }
+        const observer=new IntersectionObserver(handleIntersection,{threshold:0.3})
+        const section=ref.current;
+        if(section){
+            observer.observe(section);
+        }
+        return ()=>{
+            if(section){
+                observer.unobserve(section);
+            }
+        }
+    },[])    
     const [formData, setFormData] = useState({
         from_name: '',
         reply_to: '',
@@ -73,7 +94,7 @@ function Contact() {
     };
 
     return (
-        <section id="contact">
+        <section id="contact" ref={ref} className={classes.contactSection}>
             <div className={classes.head}>
                 <span>Contact</span>
                 <h2>Contact with me</h2>

@@ -1,6 +1,7 @@
 import {social} from "../data"
 import reactLogo from "../assets/reactHome.svg"
 import classes from "./Home.module.css"
+import TypingAnimation from "./TypingAnimation"
 function Home({theme}){
     return(
         <section id="home">
@@ -11,8 +12,8 @@ function Home({theme}){
             </div>  
             <div className={classes.home_info}>
                 <h1>Hello I'm</h1>
-                <h1>Aman Kalabay</h1>
-                <h1>Backend Developer</h1>
+                <h1>Aman Kalabay</h1>                
+                <TypingAnimation/>
                 <a href="#contact" className={classes.button}>Contact me</a>
             </div>
             <img className={classes.home_img} src={reactLogo} alt="logo"/>        

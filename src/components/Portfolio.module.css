@@ -1,4 +1,4 @@
-.head{
+/* .head{
     text-align: center;
     font-size: 1.5rem;
 }
@@ -62,6 +62,125 @@
     scale: 0;
 }
   
+.content_description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+}
+.animateSection {
+    opacity: 1;
+    transform: translateY(0);
+}
+.portfolioSection {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .animateSection .project_item {
+    opacity: 1;
+    transform: scale(1);
+  }
+   */
+   /* Styles for the entire portfolio section */
+.portfolioSection {
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly below the viewport */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+/* Styles applied when the section is visible */
+.animateSection {
+    opacity: 1;
+    transform: translateY(0); /* Slide into view */
+}
+
+/* Styles for the portfolio heading */
+.head {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.head span {
+    display: block;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.head h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Styles for the portfolio items list */
+.projects {
+    display: grid;
+    width: 100%;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem; /* Space between items */
+}
+
+/* Styles for individual project items */
+.project_item {
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Hover effect for project items */
+.project_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+/* Styles for the project images */
+.project_item img {
+    width: 100%;
+    transition: opacity 0.6s ease; /* Changed from 'fill' to 'opacity' */
+}
+
+/* Styles for the project content overlay */
+.project_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #5B99C2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Reveal the content on hover */
+.project_item:hover .project_content {
+    transform: rotateX(0deg);
+}
+
+/* Styles for the content title */
+.content_title {
+    margin: 0;
+    font-size: 24px;
+    color: #222;
+    font-weight: 700;
+}
+
+/* Hide image on hover */
+.project_item:hover img {
+    opacity: 0; /* Changed from 'scale' to 'opacity' */
+}
+
+/* Styles for the content description */
 .content_description {
     margin: 10px 0 0;
     font-size: 14px;

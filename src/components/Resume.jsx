@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useEffect ,useRef} from 'react';
 import classes from './Resume.module.css';
 
 export default function Resume() {
+    const ref=useRef(null);
+    useEffect(()=>{
+        function handleIntersection(entries,observer){
+            entries.forEach(entry=>{
+                if(entry.isIntersecting){
+                    entry.target.classList.add(classes.animateSection);
+                    observer.unobserve(entry.target);
+                }
+            })
+        }
+        const observer=new IntersectionObserver(handleIntersection,{threshold:0.3});
+        const section=ref.current;
+        if(section){
+            observer.observe(section);
+        }
+        return () => {
+            if (section) observer.unobserve(section);
+        };
+    },[])
     return (
-        <section id='resume'>        
+        <section id='resume' ref={ref} className={classes.resumeSection}>        
         <div className={classes.head}>
                 <span>Resume</span>
                 <h3>My resume</h3>
