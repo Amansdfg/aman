@@ -26,7 +26,7 @@ export default function Features(){
         <section id="features" ref={ref} className={classes.featuresSection}>
             <div className={classes.head}>
                 <span>Features</span>
-                <h3>Introduction</h3>
+                <h3>My Interesting Features</h3>
             </div>
 
             <div className={classes.features}>

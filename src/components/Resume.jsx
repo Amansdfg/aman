@@ -18,7 +18,9 @@ export default function Resume() {
             observer.observe(section);
         }
         return () => {
-            if (section) observer.unobserve(section);
+            if (section){ 
+                observer.unobserve(section);
+            }
         };
     },[])
     return (

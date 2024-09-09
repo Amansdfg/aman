@@ -9,7 +9,7 @@
 
 .horizontal_scroll_content {
     display: flex;
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
     animation-play-state: running;
     flex-shrink: 0;
 }
@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.horizontal_scroll_item:hover {
+.horizontal_scroll_content:hover {
     animation-play-state: paused;
 }
 
@@ -39,4 +39,10 @@
     100% {
         transform: translateX(-100%);
     }
+}
+
+.head{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
 }

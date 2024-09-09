@@ -35,13 +35,133 @@ import jwt from "./assets/JWT_CV.png"
 import javaLogo from "./assets/java.png"
 import pythonLogo from "./assets/python.png"
 import javasciptLogo from "./assets/js.png";
-import springLogo from "./assets/springLogo.png";
-
+import springLogo from "./assets/springlogo.png";
 import reactLogo from "./assets/reactHome.svg"
-
 import tailwindLogo from "./assets/tailwindCSS.png"
 import gitLogo from "./assets/gitLogo.png"
 import githubLogo from "./assets/githublogo.png";
+import hibernaneLogo from "./assets/hibernateLogo.png"
+import reduxLogo from "./assets/reduxLogo.png";
+import liquibaseLogo from "./assets/liquibaseLogo.png";
+import viteLogo from "./assets/viteLogo.png";
+import postgresLogo from "./assets/postgresSQLLogo.png"
+import mySQLLogo from "./assets/mySQLLogo.png";
+import SQLiteLogo from './assets/SQLiteLogo.png';
+import insomniaLogo from "./assets/insomniaLogo.png";
+import postmanLogo from "./assets/postmanLogo.png";
+import mongoLogo from "./assets/mongoDBLogo.png";
+import dockerLogo from "./assets/dockerLogo.png";
+import jetbrainsLogo from "./assets/jetBrainsLogo.png";
+import apacheLogo from "./assets/apacheTomcatLogo.png";
+import html from "./assets/HTML5Logo.png";
+import cssLogo from "./assets/CSS3Logo.png";
+import NPMLogo from "./assets/NPMLogo.png";
+import redisLogo from "./assets/redisLogo.png";
+
+export const hori=[
+    {
+        id:'h1',
+        img:javaLogo
+    },
+    {
+        id:'h2',
+        img:pythonLogo
+    },
+    {
+        id:'h3',
+        img:javasciptLogo
+    },
+    {
+        id:'h4',
+        img:springLogo
+    },
+    {
+        id:'h5',
+        img:reactLogo
+    },
+    {
+        id:'h6',
+        img:tailwindLogo
+    },
+    {
+        id:'h7',
+        img:gitLogo
+    },
+    {
+        id:'h8',
+        img:githubLogo
+    },
+    {
+        id:'h9',
+        img:hibernaneLogo
+    },
+    {
+        id:'h10',
+        img:reduxLogo
+    },
+    {
+        id:'h11',
+        img:liquibaseLogo
+    },
+    {
+        id:'h12',
+        img:viteLogo
+    },
+    {
+        id:'h13',
+        img:postgresLogo
+    },
+    {
+        id:'h14',
+        img:mySQLLogo
+    },
+    {
+        id:'h15',
+        img:SQLiteLogo
+    },
+    {
+        id:'h16',
+        img:insomniaLogo
+    },
+    {
+        id:'h17',
+        img:postmanLogo
+    },
+    {
+        id:'h18',
+        img:mongoLogo
+    },
+    {
+        id:'h19',
+        img:dockerLogo
+    },
+    {
+        id:'h20',
+        img:jetbrainsLogo
+    },
+    {
+        id:'h21',
+        img:apacheLogo
+    },
+    {
+        id:'h22',
+        img:html
+    },
+    {
+        id:'h23',
+        img:cssLogo
+    },
+    {
+        id:'h24',
+        img:NPMLogo
+    },
+    {
+        id:'h25',
+        img:redisLogo
+    },
+]
+
+
 export const currentYear=new Date().getFullYear();
 export const header={
 
@@ -243,58 +363,4 @@ export const other=[
         name:"Tailwind CSS",
         description:"A utility-first CSS framework that allows rapid UI development by composing classes for styling elements directly in HTML."        
     }
-]
-export const hori=[
-    {
-        id:'h1',
-        img:javaLogo
-    },
-    {
-        id:'h2',
-        img:pythonLogo
-    },
-    {
-        id:'h3',
-        img:javasciptLogo
-    },
-    {
-        id:'h4',
-        img:springLogo
-    },
-    {
-        id:'h5',
-        img:reactLogo
-    },
-    {
-        id:'h6',
-        img:tailwindLogo
-    },
-    {
-        id:'h7',
-        img:gitLogo
-    },
-    {
-        id:'h8',
-        img:githubLogo
-    },
-    {
-        id:'h9',
-        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
-    },
-    {
-        id:'h10',
-        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
-    },
-    {
-        id:'h11',
-        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
-    },
-    {
-        id:'h12',
-        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
-    },
-    {
-        id:'h13',
-        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
-    },
 ]
