@@ -1,0 +1,42 @@
+.horizontal_scroll_container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+}
+
+.horizontal_scroll_content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    animation-play-state: running;
+    flex-shrink: 0;
+}
+
+.horizontal_scroll_item {
+    display: inline-block;
+    margin-right: 10px;
+    width: 150px;
+    height: 100px;
+    position: relative;
+}
+
+.horizontal_scroll_item:hover {
+    animation-play-state: paused;
+}
+
+.horizontal_scroll_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

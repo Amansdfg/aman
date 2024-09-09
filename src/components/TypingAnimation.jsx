@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import classes from "./TypingAnimation.module.css"
 const TypingAnimation = () => {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
@@ -36,9 +36,9 @@ const TypingAnimation = () => {
   }, [index, isTyping, phraseIndex, phrases]);
 
   return (
-    <div style={{ fontSize: '24px', fontFamily: 'monospace' }}>
+    <div className={classes.text}>
       {text}
-      <span className="cursor">|</span>
+      <span className={classes.cursor}>|</span>
     </div>
   );
 };

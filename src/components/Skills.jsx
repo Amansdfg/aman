@@ -1,10 +1,9 @@
 import coding from "../assets/coding.gif";
 import { skills } from "../data";
 import { useEffect, useRef } from "react";
-import { card } from "../data";
 import classes from "./Skills.module.css";
 
-function Skill({ theme }) {
+function Skill() {
     const skillRef = useRef([]);
     const ref=useRef(null);
     useEffect(()=>{
@@ -71,25 +70,7 @@ function Skill({ theme }) {
                     ))}
                 </ul>
                 <img src={coding} alt="Coding GIF" />
-            </div>
-            <div className={classes.cards}>
-                {card.map((item) => (
-                    <div className={classes.card} key={item.id}>
-                        <div className={classes.inner}>
-                            <div className={classes.front}>
-                                <img src={!theme ? item.img : item.imgDark} alt={item.head} />
-                                <h2>{item.head}</h2>
-                                <span>{item.text}</span>
-                            </div>
-                            <div className={classes.back}>
-                                <img src={!theme ? item.imgBack : item.imgBackDark} alt={item.headBack} />
-                                <h2>{item.headBack}</h2>
-                                <span>{item.textBack}</span>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
+            </div>            
         </section>
     );
 }

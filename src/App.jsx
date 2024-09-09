@@ -8,6 +8,9 @@ import Contact from "./components/Contact";
 import Porfolio from "./components/Porfolio";
 import Features from "./components/Features";
 import Resume from "./components/Resume";
+import Card from "./components/Card";
+import ScrollToTopButton from "./components/ScroolButtonTop";
+import HorizontalScroll from "./components/Horizontal";
 function App(){
   const [theme, setTheme] = useState(false);
 
@@ -22,12 +25,15 @@ function App(){
       <Header onChangeTheme={toggleTheme} theme={theme}/>
       <Home theme={theme}/>
       <Personal theme={theme}/>
-      <Skill theme={theme}/>    
+      <Skill/>    
+      <Card theme={theme}/>
       <Porfolio/>    
       <Features/>
+      <HorizontalScroll/>
       <Resume/>
       <Contact/>
       <Footer theme={theme}/>    
+      <ScrollToTopButton/>
     </>
   )
 }

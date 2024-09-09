@@ -1,14 +1,15 @@
 .cursor {
-    display: inline-block;
-    width: 10px;
-    background-color: black;
-    margin-left: 5px;
-    animation: blink 1s step-start infinite;
+  display: inline-block;    
+  background-color: black;
+  margin-left: 5px;
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
-  
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  }
-  
+}
+.text{
+  font-size: 24px;
+  font-family: monospace;
+}

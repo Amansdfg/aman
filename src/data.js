@@ -32,6 +32,16 @@ import webSocket from "./assets/webSocket_CV.jpg"
 import tailwind from "./assets/TailwindCSS_CV.png"
 import jwt from "./assets/JWT_CV.png"
 
+import javaLogo from "./assets/java.png"
+import pythonLogo from "./assets/python.png"
+import javasciptLogo from "./assets/js.png";
+import springLogo from "./assets/springLogo.png";
+
+import reactLogo from "./assets/reactHome.svg"
+
+import tailwindLogo from "./assets/tailwindCSS.png"
+import gitLogo from "./assets/gitLogo.png"
+import githubLogo from "./assets/githublogo.png";
 export const currentYear=new Date().getFullYear();
 export const header={
 
@@ -233,4 +243,58 @@ export const other=[
         name:"Tailwind CSS",
         description:"A utility-first CSS framework that allows rapid UI development by composing classes for styling elements directly in HTML."        
     }
+]
+export const hori=[
+    {
+        id:'h1',
+        img:javaLogo
+    },
+    {
+        id:'h2',
+        img:pythonLogo
+    },
+    {
+        id:'h3',
+        img:javasciptLogo
+    },
+    {
+        id:'h4',
+        img:springLogo
+    },
+    {
+        id:'h5',
+        img:reactLogo
+    },
+    {
+        id:'h6',
+        img:tailwindLogo
+    },
+    {
+        id:'h7',
+        img:gitLogo
+    },
+    {
+        id:'h8',
+        img:githubLogo
+    },
+    {
+        id:'h9',
+        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
+    },
+    {
+        id:'h10',
+        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
+    },
+    {
+        id:'h11',
+        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
+    },
+    {
+        id:'h12',
+        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
+    },
+    {
+        id:'h13',
+        img:'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
+    },
 ]
