@@ -23,7 +23,7 @@ import javascipt from "./assets/javascript.svg"
 import javasciptDark from "./assets/javascriptDark.svg"
 import react from "./assets/react.svg"
 import reactDark from "./assets/reactDark.svg"
-import tic_tac_toe from "./assets/portfolio/tic-tac-toe.png";
+import tic_tac_toe from "./assets/tic-tac-toe.png";
 import petProject from "./assets/project.png";
 import snakeGame from "./assets/snakeGame.png";
 import techProduct from "./assets/techproduct.png"
@@ -57,6 +57,7 @@ import html from "./assets/HTML5Logo.png";
 import cssLogo from "./assets/CSS3Logo.png";
 import NPMLogo from "./assets/NPMLogo.png";
 import redisLogo from "./assets/redisLogo.png";
+
 
 export const hori=[
     {

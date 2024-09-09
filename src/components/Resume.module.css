@@ -10,7 +10,7 @@
 .resumeSection {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 2s ease, transform 2s ease;
 }
 
 .animateSection {

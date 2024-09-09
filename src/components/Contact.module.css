@@ -1,7 +1,7 @@
 .contactSection {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 2s ease, transform 2s ease;
 }
 
 .animateSection {
@@ -12,24 +12,49 @@
     text-align: center;
     font-size: 1.5rem;
 }
-.form{
+.form{        
     display: flex;
     flex-direction: column;
     gap:10px;
-    width: 400px;
-    margin: 10px auto;
+    width: 100%;
+    padding: 30px;
+    border-radius: 0.5rem;    
+    box-shadow: 0px 0px 10px #ffffff73, 0px 0px 10px rgba(94, 104, 121, 0.288);
     span{
         font-size: 1.25rem;
     }
 }
-
+.div{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+.section{
+    display: flex;
+    gap:10rem; 
+    flex-direction: column; 
+    margin:40px 0px;
+}
+.left{
+    display: flex;
+    width: 100%;
+    gap:2rem;      
+    flex-direction: column; 
+    padding: 30px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px #ffffff73, 0px 0px 10px rgba(94, 104, 121, 0.288);
+}
 .input{
     padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 textarea{
     height: 200px;
     resize: vertical;
     cursor: se-resize;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 .btn_send{
     padding: 5px 10px;
@@ -45,4 +70,24 @@ textarea{
         padding: 10px;
         margin: 0;
     }
+    
+    
+}
+@media (min-width:768px){   
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    .left{
+        width: 40%;
+    }
+    .form{
+        width: 40%;
+    }
+}
+.icon {
+    fill:black;
+}
+.iconDark {
+    fill: white;
 }

@@ -31,7 +31,7 @@ function App(){
       <Features/>
       <HorizontalScroll/>
       <Resume/>
-      <Contact/>
+      <Contact theme={theme}/>
       <Footer theme={theme}/>    
       <ScrollToTopButton/>
     </>

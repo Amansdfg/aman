@@ -1,7 +1,6 @@
 import classes from "./Features.module.css";
 import { other } from "../data";
 import { useEffect, useRef } from "react";
-
 export default function Features(){
     const ref = useRef(null);
     useEffect(()=>{
@@ -13,7 +12,7 @@ export default function Features(){
                 }
             });
         }
-        const observer = new IntersectionObserver(handleIntersection,{ threshold: 0.3 });
+        const observer = new IntersectionObserver(handleIntersection,{ threshold: 0.3});
         const section = ref.current;
         if (section) {
             observer.observe(section);

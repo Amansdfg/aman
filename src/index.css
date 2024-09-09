@@ -17,6 +17,8 @@
     --big-font: 3.2rem;
     --medium-font: 1.8rem;
     --p-font: 0.941 rem;
+    --box-shadow:rgba(0,0,0,0.1);
+    --box-shadow-dark:rgba(258,260,260,0.1);
 }
 h1,h2,h3,h4,h5,h6{
     padding: 0;
@@ -39,7 +41,7 @@ body {
 }
 
 section{
-    padding: 50px 10%;
+    padding: 50px 10%;    
 }
 
 #profile{
