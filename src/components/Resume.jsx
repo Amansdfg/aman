@@ -18,7 +18,7 @@ export default function Resume() {
             observer.observe(section);
         }
         return () => {
-            if (section){ 
+            if (section){
                 observer.unobserve(section);
             }
         };
@@ -47,7 +47,7 @@ export default function Resume() {
             <div className={classes.section}>
                 <h2>About Me</h2>
                 <p>
-                    Good day! My name is Aman Kalabay, and I’m a motivated Java developer with a strong background in backend and frontend development. I hold a Bachelor’s degree in Information Systems and have worked on projects like Chatgram, showcasing my skills in Java and web technologies. I’m passionate about technology and continuously seek to expand my knowledge and skills. I am eager to learn and contribute to projects in the field of programming.
+                    Good day! My name is Aman Kalabay, and I'm a motivated Java developer with a strong background in backend and frontend development. I hold a Bachelor's degree in Information Systems and have worked on projects like Chatgram, showcasing my skills in Java and web technologies. I'm passionate about technology and continuously seek to expand my knowledge and skills. I am eager to learn and contribute to projects in the field of programming.
                 </p>
             </div>
 
@@ -72,7 +72,7 @@ export default function Resume() {
                         <h3>Bitlab Academy</h3>
                         <p>Java Mentor</p>
                         <p>- Providing individual support and mentoring to students in their studies on topics such as Java, HTML/CSS/JS, Java EE, and Spring.</p>
-                        <p>- Answering students’ questions and assisting in solving complex tasks related to the technologies being studied.</p>
+                        <p>- Answering students' questions and assisting in solving complex tasks related to the technologies being studied.</p>
                     </div>
                     <div className={classes.date}>May 2024 - June 2024</div>
                 </div>
