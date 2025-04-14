@@ -24,7 +24,7 @@ export default function Personal({theme}){
     return(
         <section id="personal" ref={ref} className={classes.personSection}>
             <div className={classes.head}>
-                <span>Aman Kalabay</span>
+                <span>Aman Kalabay Aibekuly</span>
                 <h3>Introdation</h3>
             </div>
             <div className={classes.personal_main}>
