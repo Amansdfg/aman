@@ -272,7 +272,7 @@ export const skills=[
     {
         id:"6",
         name:"Postgres",
-        skill:10
+        skill:1
     },
     {
         id:"7",
