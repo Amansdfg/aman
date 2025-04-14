@@ -252,32 +252,32 @@ export const skills=[
     {
         id:"1",
         name:"Java",
-        skill:95
+        skill:30
     },
     {
         id:"2",
         name:"JavaScript",
-        skill:80
+        skill:10
     },
     {
         id:"4",
         name:"Spring",
-        skill:85
+        skill:10
     },
     {
         id:"5",
         name:"React",
-        skill:80
+        skill:10
     },
     {
         id:"6",
         name:"Postgres",
-        skill:80
+        skill:10
     },
     {
         id:"7",
         name:"Tailwind CSS",
-        skill:80
+        skill:10
     }
 ]
 export const card=[
