@@ -24,8 +24,8 @@ export default function Personal({theme}){
     return(
         <section id="personal" ref={ref} className={classes.personSection}>
             <div className={classes.head}>
-                <span>Aman Kalabay Aibekuly</span>
-                <h3>Introdation</h3>
+                {/* <span>Aman Kalabay Aibekuly</span> */}
+                {/* <h3>Introdation</h3> */}
             </div>
             <div className={classes.personal_main}>
                 <span>Good day! My name is Aman, and I'm a motivated student with a deep interest in Java development and programming. I am eager to learn and contribute to projects in the field.</span>
