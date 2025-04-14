@@ -43,14 +43,15 @@
     color: white;
     border-radius: 0.5rem;
 }
-@keyframes persent{
-    0%{
+@keyframes progress {
+    0% {
         width: 0;
     }
-    persent{
+    100% {
         width: 100%;
     }
 }
+
 @media(max-width:600px){
     .personal_info{
         width: 100%;
